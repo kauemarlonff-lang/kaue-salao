@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière Studio — Salão de Beleza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">Lumière<span>Studio</span></div>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#agendar" class="btn-nav">Agendar</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────────────── -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Beleza com Propósito</p>
+    <h1>Descubra seu<br/><em>melhor eu</em></h1>
+    <p class="hero-sub">Um espaço dedicado à sua transformação, com atendimento personalizado e produtos de primeira qualidade.</p>
+    <a href="#agendar" class="btn-primary">Agendar Horário</a>
+  </div>
+  <div class="hero-scroll">↓</div>
+</section>
+
+<!-- ── SERVIÇOS ─────────────────────────────────────────────────── -->
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">O que oferecemos</span>
+      <h2>Nossos Serviços</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✂️</div>
+        <h3>Corte & Estilo</h3>
+        <p>Cortes personalizados que valorizam sua estrutura facial e personalidade.</p>
+        <span class="service-price">A partir de R$ 60</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💅</div>
+        <h3>Manicure & Pedicure</h3>
+        <p>Cuidado completo para suas mãos e pés, do básico ao nail art sofisticado.</p>
+        <span class="service-price">A partir de R$ 35</span>
+      </div>
+      <div class="service-card featured">
+        <div class="service-icon">✨</div>
+        <h3>Coloração</h3>
+        <p>Técnicas modernas de coloração: balayage, mechas, ombré e muito mais.</p>
+        <span class="service-price">A partir de R$ 120</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💆</div>
+        <h3>Tratamentos Capilares</h3>
+        <p>Hidratação profunda, reconstrução e cronograma capilar personalizado.</p>
+        <span class="service-price">A partir de R$ 80</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💄</div>
+        <h3>Maquiagem</h3>
+        <p>Make para festas, casamentos, ensaios fotográficos e eventos especiais.</p>
+        <span class="service-price">A partir de R$ 90</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🧖</div>
+        <h3>Sobrancelha & Depilação</h3>
+        <p>Design de sobrancelhas, micropigmentação e depilação corporal.</p>
+        <span class="service-price">A partir de R$ 25</span>
+      </div>
+    </div>
+    <div class="services-cta">
+      <a href="#agendar" class="btn-primary">Agendar um Serviço</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOBRE ────────────────────────────────────────────────────── -->
+<section class="about" id="sobre">
+  <div class="container about-inner">
+    <div class="about-text">
+      <span class="section-tag">Nossa história</span>
+      <h2>Tradição e modernidade em cada detalhe</h2>
+      <p>Há mais de 10 anos transformando a autoestima de nossas clientes com técnicas atualizadas e um atendimento verdadeiramente personalizado.</p>
+      <p>Nosso estúdio é um espaço de cuidado, acolhimento e transformação — onde cada visita é uma experiência única.</p>
+      <div class="about-stats">
+        <div><strong>10+</strong><span>Anos de experiência</span></div>
+        <div><strong>2.500+</strong><span>Clientes satisfeitas</span></div>
+        <div><strong>15</strong><span>Profissionais especializadas</span></div>
+      </div>
+    </div>
+    <div class="about-image">
+      <div class="about-img-inner"></div>
+      <div class="about-accent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AGENDAMENTO ──────────────────────────────────────────────── -->
+<section class="booking" id="agendar">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Reserve seu horário</span>
+      <h2>Agendamento Online</h2>
+      <p class="section-desc">Preencha o formulário abaixo e confirme pelo WhatsApp. Simples e rápido!</p>
+    </div>
+
+    <div class="booking-wrapper">
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nome completo *</label>
+            <input type="text" id="name" placeholder="Seu nome" autocomplete="name" />
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">WhatsApp *</label>
+            <input type="tel" id="phone" placeholder="(11) 99999-9999" autocomplete="tel" />
+            <span class="field-error" id="phoneError"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">Serviço *</label>
+            <select id="service">
+              <option value="">Selecione um serviço</option>
+              <option value="Corte & Estilo">✂️ Corte & Estilo</option>
+              <option value="Manicure">💅 Manicure</option>
+              <option value="Pedicure">💅 Pedicure</option>
+              <option value="Manicure + Pedicure">💅 Manicure + Pedicure</option>
+              <option value="Coloração">✨ Coloração</option>
+              <option value="Mechas / Balayage">✨ Mechas / Balayage</option>
+              <option value="Tratamento Capilar">💆 Tratamento Capilar</option>
+              <option value="Maquiagem">💄 Maquiagem</option>
+              <option value="Sobrancelha">🧖 Sobrancelha</option>
+              <option value="Depilação">🧖 Depilação</option>
+            </select>
+            <span class="field-error" id="serviceError"></span>
+          </div>
+          <div class="form-group">
+            <label for="date">Data *</label>
+            <input type="date" id="date" />
+            <span class="field-error" id="dateError"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Horário disponível *</label>
+          <div class="slots-container" id="slotsContainer">
+            <p class="slots-hint">Selecione uma data e serviço para ver os horários disponíveis.</p>
+          </div>
+          <input type="hidden" id="selectedTime" />
+          <span class="field-error" id="timeError"></span>
+        </div>
+
+        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+          <span>Confirmar Agendamento</span>
+        </button>
+      </form>
+
+      <!-- SUCCESS STATE -->
+      <div class="booking-success" id="bookingSuccess" style="display:none">
+        <div class="success-icon">✓</div>
+        <h3>Agendamento Confirmado!</h3>
+        <p id="successDetails"></p>
+        <button class="btn-whatsapp" id="whatsappBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.114.554 4.1 1.524 5.823L0 24l6.337-1.507A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.651-.502-5.176-1.381l-.371-.22-3.762.895.952-3.653-.242-.382A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Enviar confirmação no WhatsApp
+        </button>
+        <button class="btn-secondary" onclick="resetForm()">Fazer novo agendamento</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────────── -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo">Lumière<span>Studio</span></div>
+      <p>Beleza que transforma, cuidado que acolhe.</p>
+    </div>
+    <div class="footer-info">
+      <p>📍 Rua das Flores, 123 — São Paulo, SP</p>
+      <p>📞 (11) 99999-9999</p>
+      <p>🕐 Seg–Sáb: 8h às 19h</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#agendar">Agendar</a>
+      <a href="admin.html">Admin</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Lumière Studio. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
