@@ -1,0 +1,59 @@
+{
+  "General": {
+    "EnableLogging": true,
+    "LogLevel": "Info",
+    "AutoBackup": true,
+    "CreateRestorePoint": true,
+    "Language": "pt-BR"
+  },
+  "CPU": {
+    "EnableSchedulerOptimization": true,
+    "PowerPlan": "Ultimate Performance",
+    "DisableCoreParking": true,
+    "OptimizeThreading": true,
+    "DisableIdleStates": false
+  },
+  "RAM": {
+    "DisableMemoryCompression": false,
+    "OptimizePagefile": true,
+    "ClearStandbyList": true,
+    "OptimizePrefetch": true,
+    "DisableSysMain": false
+  },
+  "SSD": {
+    "EnableTRIM": true,
+    "OptimizeNTFS": true,
+    "OptimizeWriteCache": true,
+    "DisableIndexing": false,
+    "UnallocatedSpaceThreshold": 10
+  },
+  "Network": {
+    "AutoTuning": true,
+    "EnableRSS": true,
+    "EnableRSC": true,
+    "DisableNagle": false,
+    "OptimizeBuffers": true,
+    "MTU": 1500,
+    "DNS_Optimization": true
+  },
+  "GPU": {
+    "EnableGPUAcceleration": true,
+    "EnableGameMode": true,
+    "DisableFullscreenOptimizations": false,
+    "EnableShaderCache": true
+  },
+  "Windows": {
+    "DisableTelemetry": true,
+    "DisableOneDrive": false,
+    "DisableXbox": true,
+    "DisableWidgets": false,
+    "DisableAnimations": false,
+    "ReduceVisualEffects": false
+  },
+  "Gaming": {
+    "EnableGameMode": true,
+    "OptimizeInputLag": true,
+    "HighPerformanceGPU": true,
+    "DisableFullscreenOptimizations": false
+  }
+}
